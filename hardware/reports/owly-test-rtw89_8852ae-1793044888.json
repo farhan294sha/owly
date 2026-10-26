@@ -1,0 +1,79 @@
+{
+  "owly": "0.4.1",
+  "time": 1793044888,
+  "kernel": "7.2.5-3-omarchy",
+  "os": "Omarchy",
+  "machine": "HP Pavilion Gaming Laptop 15-ec2xxx",
+  "driver": "rtw89_8852ae",
+  "device": "10ec:8852",
+  "status": "untested",
+  "mode": "shared",
+  "channel": 149,
+  "transfers": "omdrop-core",
+  "steps": [
+    {
+      "step": "probe",
+      "result": "pass",
+      "detail": "ready"
+    },
+    {
+      "step": "NetworkManager",
+      "result": "pass",
+      "detail": "leaves Owly's interfaces alone"
+    },
+    {
+      "step": "baseline",
+      "result": "pass",
+      "detail": "10/10 replies"
+    },
+    {
+      "step": "start",
+      "result": "pass",
+      "ms": 596
+    },
+    {
+      "step": "phone heard",
+      "result": "pass"
+    },
+    {
+      "step": "shown on the phone",
+      "result": "pass"
+    },
+    {
+      "step": "phone -> computer",
+      "result": "pass"
+    },
+    {
+      "step": "computer -> phone",
+      "result": "pass",
+      "ms": 38473
+    },
+    {
+      "step": "stop",
+      "result": "pass",
+      "ms": 2083
+    },
+    {
+      "step": "Wi-Fi after teardown",
+      "result": "pass",
+      "detail": "56/56 replies, longest gap 0 s"
+    }
+  ],
+  "wifi": {
+    "baseline": {
+      "sent": 10,
+      "received": 10,
+      "longest_gap_s": 0
+    },
+    "window": {
+      "sent": 102,
+      "received": 102,
+      "longest_gap_s": 0
+    },
+    "after": {
+      "sent": 56,
+      "received": 56,
+      "longest_gap_s": 0
+    }
+  }
+}
